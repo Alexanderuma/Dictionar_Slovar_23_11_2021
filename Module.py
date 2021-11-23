@@ -35,3 +35,19 @@ def failisse(mas:list,file:str):
         f.write(e+"\n")
     f.close()
     
+from gtts import gTTS #from playsound import playsound
+import os
+def heli(text:str, language:str):
+    """ Tekst salvestamine mp3 failisse ja mängimine
+    """
+
+    #language='en','fi','ru'
+    obj = gTTS (text=text, lang=language, slow=False).save("heli.mp3")
+    #playsound("heli.mp3")
+    os.systen("heli.mp3")
+    import pyttsx3
+    def heli2(text:str):
+        heli==pyttsx3.int()
+        #heli.setProperty('volume',0.5)#0-1
+        #heli.setProperty('rate',150)#>100
+        voices = converter.getProperty('voices')

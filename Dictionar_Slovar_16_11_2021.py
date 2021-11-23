@@ -4,6 +4,16 @@ est_list=loe_failist("est.txt")
 print(rus_list)
 print(est_list)
 
+sonad=""
+for sona in rus_list:
+    sonad=sonad+" "+sona
+heli(sona,'ru') # rus
+
+sonad=""
+for sona in est_list:
+    sonad=sonad+" "+sona
+heli(sona,'fi') # est
+
 while True:
     menu=input("Tõlgida-T: ,\nUus sõna-U: \n,Viga-V: ,\nKontroll-K: ;\nLõpp-L: ")
     if menu.upper()=="T":
